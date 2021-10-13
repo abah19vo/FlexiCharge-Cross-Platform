@@ -35,10 +35,10 @@ TODO
 https://www.filledstacks.com/post/flutter-and-provider-architecture-using-stacked/
 
 ### Naming convention
-Files: snake_case
-Classes: PascalCase
-General variables: camelCase
-Private member variables: _camelCase
+- Files: snake_case
+- Classes: PascalCase
+- General variables: camelCase
+- Private member variables: _camelCase
 
 ### Services
 Used mostly when accessing the API and making requests
