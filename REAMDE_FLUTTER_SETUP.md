@@ -1,4 +1,4 @@
-# Install Flutter on Linux
+# Install Flutter on Linux (debian)
 
 Install java sdk:
 
