@@ -2,6 +2,7 @@
 ## Contribution
 Follow the convention under chapter Architecture.
 ## Setup
+Flutter needs to be installed on your system. Go to FLUTTER_SETUP.md and read your respective operating system's guide.
 
 Download the project by either cloning it or by downloading the zip-file. After extracting the project, open it up with either Visual Studio Code or android studio.
 
