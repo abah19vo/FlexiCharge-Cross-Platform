@@ -37,8 +37,8 @@ Fix emulator
 * Start a project in android studio and create a new emulator
 
 VSCode
-Install flutter extension
-
+First: Install flutter extension
+Then:
 > press ctrl + p, then type ´>Flutter: Create new application´
 
 Check for errors
