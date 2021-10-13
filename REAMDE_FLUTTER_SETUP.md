@@ -1,8 +1,8 @@
 # Install Flutter on Windows
-TODO
+Official guide: https://flutter.dev/docs/get-started/install/windows
 
 # Install Flutter on Mac
-TODO
+Official guide: https://flutter.dev/docs/get-started/install/macos
 
 # Install Flutter on Linux (debian)
 
