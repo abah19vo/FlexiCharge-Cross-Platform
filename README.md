@@ -1,8 +1,7 @@
 # FlexiCharge-Cross-Platform
 ## Contribution
-Follow the convention under chapter Architecture.
+Follow the convention and coding style explained under chapter Architecture.
 ## Setup
-Flutter needs to be installed on your system. Go to README_FLUTTER_SETUP.md and read your respective operating system's guide.
 
 Download the project by either cloning it or by downloading the zip-file. After extracting the project, open it up with either Visual Studio Code or android studio.
 
@@ -56,11 +55,11 @@ Documentation about how certain actions are performed within the app, steps need
 ## Connect to charger
 When a valid charger ID has been entered we want to reserve the charger during the payment process.
 To enter a charger, we need the charger ID. We can get this from three different ways.
-1. Scan QR code on the charger, wich automaticly enters the charger ID into the PIN input field.
-2. Choose a charger point (green marker on the map view) and select a charger from the list. This will also automaticly enter the pin into the PIN input field
+1. Scan QR code on the charger, which automatically enters the charger ID into the PIN input field.
+2. Choose a charger point (green marker on the map view) and select a charger from the list. This will also automatically enter the pin into the PIN input field
 3. Enter the Charger ID manually.
 
-Then, we create a transaction session and recive a transaction object back from the API.
+Then, we create a transaction session and receive a transaction object back from the API.
 This transaction object contains a transactionID that we need when getting a authentication token from Klarna.
 The authentication token from Klarna can then be used to update our transaction object that verifies that our transaction was successful.
 
