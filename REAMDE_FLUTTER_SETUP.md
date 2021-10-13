@@ -1,3 +1,9 @@
+# Install Flutter on Windows
+TODO
+
+# Install Flutter on Mac
+TODO
+
 # Install Flutter on Linux (debian)
 
 Install java sdk:
