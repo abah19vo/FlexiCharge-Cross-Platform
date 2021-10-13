@@ -5,6 +5,7 @@ Official guide: https://flutter.dev/docs/get-started/install/windows
 Official guide: https://flutter.dev/docs/get-started/install/macos
 
 # Install Flutter on Linux (debian)
+Official guide: https://flutter.dev/docs/get-started/install/linux
 
 Install java sdk:
 
