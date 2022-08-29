@@ -4,7 +4,6 @@ import 'package:flexicharge/ui/widgets/charging_in_progress.dart';
 import 'package:flexicharge/ui/widgets/charging_summary.dart';
 import 'package:flexicharge/ui/widgets/stop_chargning_button.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:stacked/stacked.dart';
 
 class TopSheetView extends StatelessWidget {

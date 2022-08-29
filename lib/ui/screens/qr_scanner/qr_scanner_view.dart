@@ -41,21 +41,13 @@ class _QRViewState extends State<QrScannerView> {
 
   Widget _buildQrView(BuildContext context) {
     // For this example we check how width or tall the device is and change the scanArea and overlay accordingly.
-    var scanArea = (MediaQuery.of(context).size.width < 400 ||
-            MediaQuery.of(context).size.height < 400)
-        ? 150.0
-        : 300.0;
+    var scanArea = (MediaQuery.of(context).size.width < 400 || MediaQuery.of(context).size.height < 400) ? 150.0 : 300.0;
     // To ensure the Scanner view is properly sizes after rotation
     // we need to listen for Flutter SizeChanged notification and update controller
     return QRView(
       key: qrKey,
       onQRViewCreated: _onQRViewCreated,
-      overlay: QrScannerOverlayShape(
-          borderColor: Colors.green,
-          borderRadius: 10,
-          borderLength: 30,
-          borderWidth: 10,
-          cutOutSize: scanArea),
+      overlay: QrScannerOverlayShape(borderColor: Colors.green, borderRadius: 10, borderLength: 30, borderWidth: 10, cutOutSize: scanArea),
       onPermissionSet: (ctrl, p) => _onPermissionSet(context, ctrl, p),
     );
   }
@@ -71,11 +63,11 @@ class _QRViewState extends State<QrScannerView> {
       //Prevents the qr-code from continuing to scan after we found a code
       if (!foundValid) {
         try {
-          var code = scanData.code.removeAllWhitespace
-              .replaceAll(',', '')
-              .replaceAll('[', '')
-              .replaceAll(']', '')
-              .replaceAll("'", '');
+          var code = scanData.code?.replaceAll(',', '')
+          .replaceAll(' ', '')
+          .replaceAll('[', '')
+          .replaceAll(']', '')
+          .replaceAll("'", '') ?? "";
           if (code.length == 6) {
             int.parse(code);
             localData.qrCode = code;
